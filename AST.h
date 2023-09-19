@@ -75,3 +75,12 @@ class seperator : public Node {
   string ntype = "SEPERATOR";
   string JSON();
 };
+
+class Sexpression : public Node {
+  public:
+  Sexpression() = default;
+  string ntype = "SEXPRESSION";
+  string key;
+  shared_ptr<Expression> value;
+  string JSON();
+};
